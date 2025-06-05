@@ -3,133 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alejandra</title>
+  <title>Camiseta Cuello Redondo</title>
   <style>
-    * {
+    body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      background-color: #fff;
+      color: #333;
     }
-
-    body, html {
-      height: 100%;
-      font-family: 'Arial', sans-serif;
-    }
-
-    .container {
-      display: flex;
-      height: 100vh;
-    }
-
-    .left, .right {
-      width: 50%;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .left {
-      background-image: url('imagenes/camiseta.png'); /* Imagen similar a la izquierda de Zara */
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      color: white;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.3);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
+    header {
+      background-color: #000;
       color: #fff;
-    }
-
-    .logo {
-      font-size: 60px;
-      font-weight: bold;
-      letter-spacing: 5px;
-      color: white;
-      margin-bottom: 20px;
-      font-family: 'Georgia', serif;
-    }
-
-    .form {
-      display: flex;
-      gap: 10px;
-      margin-top: 10px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .form select, .form button {
+      text-align: center;
       padding: 10px;
-      border: none;
-      background-color: rgba(255,255,255,0.8);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f2f2f2;
+      padding: 10px;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
       color: #000;
       font-weight: bold;
+    }
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 30px auto;
+      gap: 40px;
+      padding: 0 20px;
+    }
+    .image-section img {
+      width: 100%;
+      max-width: 450px;
+      border: 1px solid #ccc;
+    }
+    .details-section {
+      flex: 1;
+    }
+    .details-section h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 24px;
+      color: #c00;
+      margin: 15px 0;
+    }
+    .sizes span {
+      display: inline-block;
+      padding: 8px 12px;
+      margin: 5px;
+      border: 1px solid #ccc;
       cursor: pointer;
+      border-radius: 5px;
     }
-
-    .form button:hover {
-      background-color: #fff;
+    .sizes span.sold-out {
+      text-decoration: line-through;
+      color: #aaa;
+      border-color: #aaa;
+      cursor: not-allowed;
     }
-
-    .remember {
-      margin-top: 10px;
-      font-size: 14px;
-    }
-
-    .right {
-      background-image: url('https://i.imgur.com/mnZAGHV.jpg'); /* Imagen similar a la derecha de Zara */
-    }
-
-    .cookies {
-      position: absolute;
-      bottom: 10px;
-      right: 20px;
-      font-size: 12px;
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #000;
       color: #fff;
-      z-index: 2;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
     }
-
+    .info-list {
+      margin-top: 15px;
+      list-style: none;
+      padding: 0;
+    }
+    .info-list li {
+      margin: 5px 0;
+    }
   </style>
 </head>
 <body>
 
+  <header>
+    <h1>ROLAND</h1>
+  </header>
+
+  <nav>
+    <a href="#">MUJER</a>
+    <a href="#">HOMBRE</a>
+    <a href="#">KIDS</a>
+    <a href="#">CANDY SHOP</a>
+    <a href="#">ACCESORIOS</a>
+    <a href="#">REBAJAS</a>
+    <a href="#">REGÍSTRATE</a>
+  </nav>
+
   <div class="container">
-    <div class="left">
-      <div class="overlay"></div>
-      <div class="content">
-        <div class="logo">ALEJANDRA</div>
-        <div class="form">
-          <select>
-            <option>ECUADOR</option>
-            <option>MÉXICO</option>
-            <option>ESPAÑA</option>
-          </select>
-          <select>
-            <option>ESPAÑOL</option>
-            <option>ENGLISH</option>
-          </select>
-          <button>GO</button>
-        </div>
-        <div class="remember">
-          <input type="checkbox" id="recordar" />
-          <label for="recordar">Recordar selección</label>
-        </div>
-      </div>
-      <div class="cookies">COOKIES SETTINGS</div>
+    <div class="image-section">
+      <img src="imagenes/camiseta.png" alt="Camiseta Cuello Redondo">
     </div>
-    <div class="right"></div>
+    <div class="details-section">
+      <p><strong>Roland</strong></p>
+      <h2>CAMISETA CUELLO REDONDO JERSEY VINO</h2>
+      <p>CÓDIGO: BCF-2321</p>
+      
+      <div class="sizes">
+        <p><strong>Talla:</strong></p>
+        <span>S</span>
+        <span>M</span>
+        <span>L</span>
+        <span class="sold-out">XL</span>
+        <span class="sold-out">XXL</span>
+      </div>
+
+      <button class="button">Agregar al carrito</button>
+
+      <ul class="info-list">
+        <li>• Pack x1</li>
+        <li>• Composición: 95% ALGODÓN – 5% ELASTANO</li>
+        <li>• Línea Basic</li>
+      </ul>
+
+      <p class="price">$9.99</p>
+    </div>
   </div>
 
 </body>
