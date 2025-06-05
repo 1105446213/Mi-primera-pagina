@@ -1,11 +1,84 @@
 <!DOCTYPE html>
- <html lang="es">
- <head>
- <meta charset="UTF-8">
- <title>Mi Primera P´ agina</title>
- </head>
- <body>
- <h1>¡Hola, mundo!</h1>
- <p>Esta es mi primera p´ agina web publicada con GitHub Pages.</p>
- </body>
- </html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Ropa</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Hombre</a>
+        <a href="#">Mujer</a>
+        <a href="#">Niños</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <div class="container">
+        <div class="product">
+            <h2>Camiseta de Manga Corta</h2>
+            <p>Precio: $20.00</p>
+            <img src="camiseta-manga-corta.jpg" alt="Camiseta de Manga Corta">
+            <p>Descripción: Una camiseta cómoda y fresca para el verano.</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <h2>Pantalones Vaqueros</h2>
+            <p>Precio: $30.00</p>
+            <img src="pantalones-vaqueros.jpg" alt="Pantalones Vaqueros">
+            <p>Descripción: Pantalones modernos y ajustados.</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <!-- Agrega más productos según sea necesario -->
+    </div>
+    <footer>
+        <p>&copy; 2025 Tienda de Ropa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
