@@ -2,50 +2,61 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio - Alejandra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alejandra - Estilo y Elegancia</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f7f7f7;
+      background-color: #fff0f5;
       color: #333;
     }
 
     header {
-      background-color: #000;
+      background-color: #ff69b4;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      font-family: 'Georgia', serif;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
     }
 
     nav {
+      background-color: #ffe4e1;
       display: flex;
       justify-content: center;
-      background-color: #111;
+      padding: 10px 0;
     }
 
     nav a {
-      color: white;
-      padding: 14px 20px;
+      color: #d63384;
       text-decoration: none;
-      display: block;
+      margin: 0 20px;
+      font-weight: bold;
     }
 
     nav a:hover {
-      background-color: #444;
+      text-decoration: underline;
     }
 
     .hero {
-      height: 80vh;
-      background-image: url('https://source.unsplash.com/1600x900/?fashion,model');
+      background-image: url('https://source.unsplash.com/1600x700/?fashion,woman,style');
       background-size: cover;
       background-position: center;
+      height: 80vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      color: white;
       position: relative;
     }
 
@@ -53,25 +64,39 @@
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.3);
     }
 
-    .hero h1 {
+    .hero h2 {
+      color: white;
       z-index: 1;
-      font-size: 4rem;
+      font-size: 3em;
+      text-align: center;
+      padding: 0 20px;
     }
 
     .section {
       padding: 60px 20px;
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
     }
 
+    .section h2 {
+      color: #d63384;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
     footer {
-      background-color: #000;
+      background-color: #ff69b4;
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
     }
 
   </style>
@@ -80,23 +105,23 @@
 
   <header>
     <h1>Alejandra</h1>
-    <p>Moda | Estilo | Tendencia</p>
+    <p>Estilo, fuerza y elegancia femenina</p>
   </header>
 
   <nav>
     <a href="#">Inicio</a>
     <a href="#">Colección</a>
-    <a href="#">Nosotros</a>
-    <a href="#">Contacto</a>
+    <a href="#">Nosotras</a>
+    <a href="#">Contáctanos</a>
   </nav>
 
-  <div class="hero">
-    <h1>Bienvenidos a Alejandra</h1>
-  </div>
+  <section class="hero">
+    <h2>Descubre tu estilo único con Alejandra</h2>
+  </section>
 
   <section class="section">
-    <h2>Sobre Nosotros</h2>
-    <p>Alejandra es una marca dedicada a la moda contemporánea, combinando estilo, elegancia y sostenibilidad. Nuestras colecciones están inspiradas en la mujer moderna que busca autenticidad en cada prenda.</p>
+    <h2>Bienvenida a Alejandra</h2>
+    <p>Alejandra es más que una marca: es una declaración de identidad, confianza y belleza. Diseñamos pensando en ti, en tu autenticidad, y en tu camino único. Desde atuendos elegantes hasta opciones casuales con estilo, queremos acompañarte en cada paso de tu vida.</p>
   </section>
 
   <footer>
